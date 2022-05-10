@@ -1,6 +1,6 @@
 from turtle import *
 import random
-
+speed(0)
 colormode(255)
 reset()
 def square(size):

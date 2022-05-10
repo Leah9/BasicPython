@@ -1,4 +1,5 @@
-myfile = open("myfile.txt", "a") # a means open in append mode
+myfile = open("myfile.txt") # a means open in append mode
+outfile = open("myoutfile.txt", "w")
 file = ""
 for line in myfile:
     print(line.rstrip()) # rstrip removes carriage returns and space
@@ -11,9 +12,9 @@ if choice == "y":
     file += usertext
     print("The new text file is :")
     print(file)
-    #for i in file:
-        #print(i, file = myfile)
+    for i in file:
+        print(i, file = outfile)
 
 print(file)
-
+outfile.close()
 myfile.close()
