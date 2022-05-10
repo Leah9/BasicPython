@@ -49,7 +49,7 @@ res = cur.fetchall()
 
 
 while 1:
-    choose = input("Enter a to add a fruit, i to import from csv, dl to delete an item, d to display table : ")
+    choose = input("Enter a to add a fruit, i to import from csv, dl to delete an item, d to display table, q to quit.")
     if choose == "a":
         name = input("Name : ")
         quantity = input("Quantity : ")
@@ -65,6 +65,9 @@ while 1:
 
     if choose == "d":
         displayTable()
+
+    if choose == "q":
+        break
 
 
 
